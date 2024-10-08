@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 10;
+    font-family:  "Book Antiqua";/*'Poppins',sans-serif;*/
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #fff;
+    color: #080808; 
+}
+#header{
+    width: 100%;
+}
+.container{
+    padding: 40px 7%;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    color: #080808;
+    text-align: right;
+}
+.logo{
+    width: 120px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #080808;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #BA0018;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+    color: #080808; 
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #640064;
+}
+/* ------------about--------- */
+#about{
+    padding: 80px 10px;
+    color: #080808;
+}
+.row{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* text-align: center; */
+}
+.about-col-1{
+    flex-basis: 95vh;
+}
+.about-col-1 h1 span{
+    color: #640064;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: #080808;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #BA0018;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    color: #008080; /*#b54769; */
+    font-size: 16px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents p span{
+    color: #640064; /*#b54769; */
+    font-size: 14px;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.timeline {
+    background-color: #fff;
+    width: 95vw;
+    padding: 0; /* Removes any extra padding that could push content off-screen */
+    margin: 0 auto; /* Centers the timeline content */
+}
+.timeline h2{
+    font-size: 30px;
+    text-align: center;
+}
+.timeline-image{
+    width: 95vw;
+    height: auto;
+}
